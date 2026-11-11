@@ -29,17 +29,27 @@ kiran portfolio/
 └── kiran_portfolio_build_plan.md ← original brief
 ```
 
-**Architecture decision:** Everything lives in `index.html` — all CSS in `<style>`, all JS in `<script>`. No build step, no npm, no framework. Deployable by drag-and-drop or one CLI command. This was a deliberate choice for simplicity and portability.
+**Architecture decision:** Everything lives in `index.html` — all CSS in `<style>`, all JS in `<script>`. No build step, no npm, no framework. Deployable by a git push or one CLI command. This was a deliberate choice for simplicity and portability.
 
 ---
 
 ## Deployment
 
-**Platform:** Vercel  
-**Deploy command** (from project folder):
+**Platform:** Vercel (project `kirankrishnakumar`)  
+**Repo:** https://github.com/Dilith-D/kiran-portfolio (public, branch `main`)  
+**Deploy trigger:** a push to `main` auto-deploys to production. Vercel's Git integration is connected to the repo (done 2026-11-11 with `vercel git connect`). Before that date the site was CLI-only and had no repo.
+
+**Fallback manual deploy** (from project folder, works without a push):
 ```bash
 vercel --prod --yes
 ```
+
+**Collaborators:** `kirankmenon2001` was invited with write access on 2026-11-11. GitHub personal repos have no co-owner role; write access lets them push but not change settings. For full ownership, transfer the repo or move it to an organization.
+
+**Traps:**
+- `.vercel/` and `.claude/` are gitignored on purpose. `.vercel/project.json` is local link state, not something to commit.
+- This folder is its own git repo nested inside a parent repo rooted at the home directory. Run git commands from inside this folder.
+- On Vercel's Hobby plan, deploys from commits by people who are not on the Vercel account can be blocked for private repos. The repo was made public partly to avoid this. If a collaborator's push does not deploy, check the deployment in the Vercel dashboard first.
 **SPA routing:** `vercel.json` rewrites all paths to `index.html` so clean URLs like `/certifications` work on direct access or refresh.
 
 ---
