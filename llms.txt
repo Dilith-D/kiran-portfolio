@@ -10,7 +10,7 @@ He is open to hybrid and remote data engineering roles.
 
 ## Skills
 
-- **Languages:** Python, SQL, ECL, R
+- **Languages:** Python, SQL, ECL, R, HTML, CSS
 - **Data Engineering:** ETL/ELT pipelines, SSIS, Azure Data Factory, Databricks, dbt Cloud, Snowflake, Feature Engineering
 - **Business Intelligence:** Power BI, Power BI Service, Paginated Reports, Tableau, Power Query, Excel
 - **Databases:** SQL Server, SSMS, Stored Procedures, Data Modeling, Relational Architecture
