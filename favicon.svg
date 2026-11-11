@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c1a2e"/>
+      <stop offset="100%" stop-color="#050810"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="32" height="32" rx="7" fill="url(#bg)"/>
+  <!-- Cyan border -->
+  <rect width="32" height="32" rx="7" fill="none" stroke="#00c8ff" stroke-width="1.5" opacity="0.45"/>
+  <!-- Bold KK -->
+  <text
+    x="16" y="22"
+    text-anchor="middle"
+    font-family="'Arial Black','Arial Bold',Arial,sans-serif"
+    font-weight="900"
+    font-size="15"
+    fill="#00c8ff"
+    letter-spacing="0.5"
+  >KK</text>
+</svg>

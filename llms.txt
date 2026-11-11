@@ -1,0 +1,60 @@
+# Kiran Krishnakumar
+
+> Data Engineer specialising in enterprise-scale pipelines, lakehouses, and business intelligence.
+
+## About
+
+Kiran Krishnakumar is a Data Engineer (Senior Associate Engineer) at Ascendion, based in Bengaluru, Karnataka, India. He designs and delivers production-grade data engineering solutions using the modern data stack — Microsoft Fabric, Azure Data Factory, Databricks, Snowflake, dbt Cloud, and Power BI. He holds 6 industry certifications across Azure, Microsoft Fabric, Snowflake, and AI. He graduated with a B.Tech in Computer Science from VIT Vellore in 2024.
+
+He is open to hybrid and remote data engineering roles.
+
+## Skills
+
+- **Languages:** Python, SQL, ECL, R
+- **Data Engineering:** ETL/ELT pipelines, SSIS, Azure Data Factory, Databricks, dbt Cloud, Snowflake, Feature Engineering
+- **Business Intelligence:** Power BI, Power BI Service, Paginated Reports, Tableau, Power Query, Excel
+- **Databases:** SQL Server, SSMS, Stored Procedures, Data Modeling, Relational Architecture
+- **Cloud:** Microsoft Azure, AWS, Microsoft Fabric, Snowflake, SnowConvert AI, SnowConvert Migration Accelerator
+- **AI / ML:** Machine Learning, Data Science, Generative AI, Prompt Engineering, EDA, Statistics & Probability
+
+## Experience
+
+### Senior Associate Engineer — Ascendion
+*Oct 2025 – Present · Full-time · Hybrid · Bengaluru, Karnataka, India*
+
+Building enterprise-grade data engineering solutions across Microsoft Fabric, Azure, Databricks, Snowflake, and Power BI.
+
+**Technologies:** Power BI, Microsoft Fabric, Azure, Databricks, Snowflake, Python, SQL
+
+### Associate Engineer — Ascendion
+*Jul 2024 – Oct 2025 · Full-time · On-site · Chennai, Tamil Nadu, India*
+
+Built and optimised data pipelines and ETL workflows across Azure Data Factory, Databricks, and Snowflake. Developed Power BI dashboards and semantic models for enterprise reporting.
+
+**Technologies:** Power BI, ADF, SSIS, SQL, Python, ETL
+
+### Full Stack Engineer Intern — IBS Software
+*May 2023 – Jul 2023 · Internship · On-site · Kochi, Kerala, India*
+
+Designed and developed backend services using Java Spring Boot. Integrated AI functionalities and built RESTful APIs for secure, efficient data processing.
+
+**Technologies:** Java, Spring Boot, REST APIs, AI Integration
+
+## Certifications
+
+- Microsoft Certified: Fabric Data Engineer Associate (DP-700)
+- Microsoft Certified: Fabric Analytics Engineer Associate (DP-600)
+- Microsoft Certified: Power BI Data Analyst Associate (PL-300)
+- Microsoft Certified: Azure Fundamentals (AZ-900)
+- Snowflake SnowPro® Associate: Platform (SOC-C01)
+- IBM Artificial Intelligence Analyst
+
+## Education
+
+- B.Tech, Computer Science — VIT Vellore, 2024
+
+## Links
+
+- Portfolio: https://kirankrishnakumar.vercel.app
+- LinkedIn: https://www.linkedin.com/in/kiran-k/
+- GitHub: https://github.com/kirankmenon2001
