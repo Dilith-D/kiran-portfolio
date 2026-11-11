@@ -178,7 +178,7 @@ Years Exp   Certifications  Technologies
 
 **Education badge** (inline, subtle card at bottom of about):
 ```
-🎓  B.Tech, Computer Science · VIT Vellore · 2024 · CGPA 8.23
+B.Tech, Computer Science · VIT Vellore · 2024 · CGPA 8.23
 ```
 
 ---
@@ -266,26 +266,26 @@ On mobile: single column, line on far left.
 **6 Skill Cards - Full Content**:
 
 ```
-💻 Programming Languages
+Programming Languages
    Python · SQL · ECL · R · HTML · CSS
 
-⚙️  Data Engineering
+Data Engineering
    ETL/ELT Pipelines · SSIS · Azure Data Factory
    Databricks · dbt Cloud · Snowflake · Feature Engineering
 
-📊 Business Intelligence
+Business Intelligence
    Power BI · Power BI Service · Paginated Reports
    Tableau · Power Query · Excel
 
-🗄️  Database & Query
+Database & Query
    SQL Server · SSMS · Stored Procedures
    Data Modeling · Relational Architecture
 
-☁️  Cloud Platforms
+Cloud Platforms
    Microsoft Azure · AWS · Microsoft Fabric
    Snowflake · SnowConvert AI · SnowConvert Migration Accelerator
 
-🤖 AI & Machine Learning
+AI & Machine Learning
    Machine Learning · Data Science · Generative AI
    Prompt Engineering · EDA · Statistics & Probability
 ```
