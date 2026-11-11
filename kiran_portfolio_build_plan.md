@@ -1,7 +1,7 @@
-# Kiran Krishnakumar — Portfolio Revamp: Claude Code Build Plan
+# Kiran Krishnakumar - Portfolio Revamp: Claude Code Build Plan
 
 ## Mission
-Rebuild Kiran's portfolio from scratch as a **single-file** `index.html` (HTML + CSS + vanilla JS, no frameworks, no build step) that can be dropped directly into Netlify. The current site is a generic template. The new one must feel like it was designed *specifically* for a Data Engineer — dark, technical, pipeline-brained, impressive.
+Rebuild Kiran's portfolio from scratch as a **single-file** `index.html` (HTML + CSS + vanilla JS, no frameworks, no build step) that can be dropped directly into Netlify. The current site is a generic template. The new one must feel like it was designed *specifically* for a Data Engineer - dark, technical, pipeline-brained, impressive.
 
 ---
 
@@ -61,13 +61,13 @@ body { font: 400 1rem/1.7 'DM Sans', sans-serif; }
 ## Page Architecture (Single Page, Smooth Scroll)
 
 ### Section Order
-1. `<nav>` — Fixed top nav with scroll progress bar
-2. `#hero` — Full viewport hero
-3. `#about` — Bio + stats
-4. `#experience` — Career timeline
-5. `#skills` — Tech stack grid
-6. `#certifications` — Credential badge wall
-7. `#contact` — Links + form
+1. `<nav>` - Fixed top nav with scroll progress bar
+2. `#hero` - Full viewport hero
+3. `#about` - Bio + stats
+4. `#experience` - Career timeline
+5. `#skills` - Tech stack grid
+6. `#certifications` - Credential badge wall
+7. `#contact` - Links + form
 
 ---
 
@@ -109,7 +109,7 @@ body { font: 400 1rem/1.7 'DM Sans', sans-serif; }
 
 **Layout**: Two column on desktop (text left, visual right), stacked on mobile
 
-**Left column — Text:**
+**Left column - Text:**
 ```
 [mono label]  > kiran_krishnakumar.init()
 
@@ -119,13 +119,13 @@ body { font: 400 1rem/1.7 'DM Sans', sans-serif; }
 
 [body] 2+ years turning raw data into
        high-impact decisions. Microsoft Fabric,
-       Snowflake, Databricks, Azure — in production.
+       Snowflake, Databricks, Azure, in production.
 
 [buttons]  [View My Work ↓]   [Download CV]
 [links]    GitHub  ·  LinkedIn
 ```
 
-**Right column — Visual (CSS-only data pipeline diagram):**
+**Right column - Visual (CSS-only data pipeline diagram):**
 Draw a vertical pipeline flow using pure CSS/divs:
 - 4-5 "nodes" stacked vertically connected by animated dashed lines
 - Node labels: `RAW DATA` → `ETL PIPELINE` → `LAKEHOUSE` → `SEMANTIC MODEL` → `DASHBOARD`
@@ -141,7 +141,7 @@ Draw a vertical pipeline flow using pure CSS/divs:
 
 ### 3. ABOUT SECTION
 
-**Layout**: Two columns — Photo left, content right (reverse on mobile)
+**Layout**: Two columns - Photo left, content right (reverse on mobile)
 
 **Photo**: 
 ```html
@@ -160,11 +160,11 @@ Style: rounded rectangle, cyan border glow, slight tilt (-2deg rotation), drop-s
 Senior Associate Engineer at Ascendion, building 
 enterprise-grade data engineering solutions. I specialise
 in transforming raw, messy data into scalable pipelines
-and decision-ready analytics — using Microsoft Fabric,
+and decision-ready analytics - using Microsoft Fabric,
 Azure Data Factory, Databricks, Snowflake, and dbt Cloud.
 
 I hold 6 industry certifications across Azure, Microsoft 
-Fabric, Snowflake, and AI — and I'm always pushing deeper
+Fabric, Snowflake, and AI - and I'm always pushing deeper
 into the modern data stack.
 
 Currently based in Bengaluru, India.
@@ -193,7 +193,7 @@ On mobile: single column, line on far left.
 
 ---
 
-**Item 1 — Ascendion (Senior Associate Engineer)**
+**Item 1 - Ascendion (Senior Associate Engineer)**
 ```
 [dot] OCT 2025 – PRESENT
       
@@ -206,7 +206,7 @@ On mobile: single column, line on far left.
 
 ---
 
-**Item 2 — Ascendion (Associate Engineer)**
+**Item 2 - Ascendion (Associate Engineer)**
 ```
 [dot] JUL 2024 – OCT 2025
 
@@ -223,7 +223,7 @@ On mobile: single column, line on far left.
 
 ---
 
-**Item 3 — IBS Software (Internship)**
+**Item 3 - IBS Software (Internship)**
 ```
 [dot] MAY 2023 – JUL 2023
 
@@ -263,7 +263,7 @@ On mobile: single column, line on far left.
 </div>
 ```
 
-**6 Skill Cards — Full Content**:
+**6 Skill Cards - Full Content**:
 
 ```
 💻 Programming Languages
@@ -369,7 +369,7 @@ const certifications = [
 
 ### 7. CONTACT SECTION
 
-**Background**: Slightly different — add a subtle radial gradient glow in bg
+**Background**: Slightly different - add a subtle radial gradient glow in bg
 
 **Header**:
 ```
@@ -381,7 +381,7 @@ const certifications = [
 
 **Two-column layout**:
 
-**Left — Social Links** (stacked link cards):
+**Left - Social Links** (stacked link cards):
 ```
 [LinkedIn icon] linkedin.com/in/kiran-k/
                 → "Connect on LinkedIn"
@@ -395,7 +395,7 @@ const certifications = [
 
 Each link is a card: dark surface, border, hover lifts + cyan accent
 
-**Right — Contact Form**:
+**Right - Contact Form**:
 ```html
 <form>
   <div class="form-group">
@@ -521,9 +521,9 @@ form.addEventListener('submit', e => {
 ## Responsive Breakpoints
 
 ```
-Mobile:  < 640px   — single column everything, hamburger nav
-Tablet:  640–1024px — 2-col grids, timeline left-aligned
-Desktop: > 1024px  — full layout as described above
+Mobile:  < 640px   - single column everything, hamburger nav
+Tablet:  640–1024px - 2-col grids, timeline left-aligned
+Desktop: > 1024px  - full layout as described above
 ```
 
 ---

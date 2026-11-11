@@ -4,7 +4,7 @@
 
 ## About
 
-Kiran Krishnakumar is a Data Engineer (Senior Associate Engineer) at Ascendion, based in Bengaluru, Karnataka, India. He designs and delivers production-grade data engineering solutions using the modern data stack — Microsoft Fabric, Azure Data Factory, Databricks, Snowflake, dbt Cloud, and Power BI. He holds 6 industry certifications across Azure, Microsoft Fabric, Snowflake, and AI. He graduated with a B.Tech in Computer Science from VIT Vellore in 2024.
+Kiran Krishnakumar is a Data Engineer (Senior Associate Engineer) at Ascendion, based in Bengaluru, Karnataka, India. He designs and delivers production-grade data engineering solutions using the modern data stack: Microsoft Fabric, Azure Data Factory, Databricks, Snowflake, dbt Cloud, and Power BI. He holds 6 industry certifications across Azure, Microsoft Fabric, Snowflake, and AI. He graduated with a B.Tech in Computer Science from VIT Vellore in 2024.
 
 He is open to hybrid and remote data engineering roles.
 
@@ -19,21 +19,21 @@ He is open to hybrid and remote data engineering roles.
 
 ## Experience
 
-### Senior Associate Engineer — Ascendion
+### Senior Associate Engineer - Ascendion
 *Oct 2025 – Present · Full-time · Hybrid · Bengaluru, Karnataka, India*
 
 Building enterprise-grade data engineering solutions across Microsoft Fabric, Azure, Databricks, Snowflake, and Power BI.
 
 **Technologies:** Power BI, Microsoft Fabric, Azure, Databricks, Snowflake, Python, SQL
 
-### Associate Engineer — Ascendion
+### Associate Engineer - Ascendion
 *Jul 2024 – Oct 2025 · Full-time · On-site · Chennai, Tamil Nadu, India*
 
 Built and optimised data pipelines and ETL workflows across Azure Data Factory, Databricks, and Snowflake. Developed Power BI dashboards and semantic models for enterprise reporting.
 
 **Technologies:** Power BI, ADF, SSIS, SQL, Python, ETL
 
-### Full Stack Engineer Intern — IBS Software
+### Full Stack Engineer Intern - IBS Software
 *May 2023 – Jul 2023 · Internship · On-site · Kochi, Kerala, India*
 
 Designed and developed backend services using Java Spring Boot. Integrated AI functionalities and built RESTful APIs for secure, efficient data processing.
@@ -51,7 +51,7 @@ Designed and developed backend services using Java Spring Boot. Integrated AI fu
 
 ## Education
 
-- B.Tech, Computer Science — VIT Vellore, 2024
+- B.Tech, Computer Science - VIT Vellore, 2024
 
 ## Links
 

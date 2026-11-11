@@ -1,4 +1,4 @@
-# Portfolio Context — Kiran Krishnakumar
+# Portfolio Context - Kiran Krishnakumar
 
 > This file is the single source of truth for how this portfolio was built. If you are continuing development with any AI model (Claude, GPT, Gemini, etc.) or Claude Code, paste this file first. It covers every design decision, technical detail, and content structure.
 
@@ -29,7 +29,7 @@ kiran portfolio/
 └── kiran_portfolio_build_plan.md ← original brief
 ```
 
-**Architecture decision:** Everything lives in `index.html` — all CSS in `<style>`, all JS in `<script>`. No build step, no npm, no framework. Deployable by a git push or one CLI command. This was a deliberate choice for simplicity and portability.
+**Architecture decision:** Everything lives in `index.html` - all CSS in `<style>`, all JS in `<script>`. No build step, no npm, no framework. Deployable by a git push or one CLI command. This was a deliberate choice for simplicity and portability.
 
 ---
 
@@ -69,8 +69,8 @@ vercel --prod --yes
 --bg-surface:  #0c1220   /* alternate sections */
 --bg-elevated: #111827   /* cards */
 
---accent-primary: #00c8ff   /* cyan  — structure, borders, interactive UI */
---accent-warm:    #f59e0b   /* amber — data values, dates, codes, stats */
+--accent-primary: #00c8ff   /* cyan  - structure, borders, interactive UI */
+--accent-warm:    #f59e0b   /* amber - data values, dates, codes, stats */
 
 --text-primary:   #f0f4ff
 --text-secondary: #8892a4
@@ -128,21 +128,21 @@ Footer       → --bg-surface
 - 2-column: photo (380px) + content
 - Photo: slight `-2deg` tilt, straightens on hover, cyan border glow
 - Photo src: `/assets/img/home-perfil.jpg` (local file)
-- Stats grid: 3 cards — "2+ Years Exp", "6 Certifications", "4+ Technologies" (amber values)
+- Stats grid: 3 cards - "2+ Years Exp", "6 Certifications", "4+ Technologies" (amber values)
 - Education pill: B.Tech, Computer Science · VIT Vellore · 2024
 
 ### 4. Metrics Band (`#metrics`)
 - 4-column grid of large animated counters
 - Values: **12 TB+** (Data Processed), **50+** (Pipelines Built), **99.8%** (Pipeline Uptime), **6** (Certifications)
 - Counts up from 0 using `requestAnimationFrame` + ease-out cubic when scrolled into view
-- `data-target` and `data-suffix` attributes drive the JS — e.g. `data-target="99" data-suffix=".8%"`
+- `data-target` and `data-suffix` attributes drive the JS - e.g. `data-target="99" data-suffix=".8%"`
 
 ### 5. Experience (`#experience`)
 - Timeline with vertical cyan gradient line
 - 3 entries:
-  1. Senior Associate Engineer — Ascendion (Oct 2025–Present, Bengaluru, Hybrid)
-  2. Associate Engineer — Ascendion (Jul 2024–Oct 2025, Chennai, On-site)
-  3. Full Stack Engineer Intern — IBS Software (May 2023–Jul 2023, Kochi)
+  1. Senior Associate Engineer - Ascendion (Oct 2025–Present, Bengaluru, Hybrid)
+  2. Associate Engineer - Ascendion (Jul 2024–Oct 2025, Chennai, On-site)
+  3. Full Stack Engineer Intern - IBS Software (May 2023–Jul 2023, Kochi)
 - Each card: amber date, Syne title, role/company, description, tech tags
 - **Scrolling Log Stream** at bottom of section (see Interactive Elements)
 
@@ -164,7 +164,7 @@ Footer       → --bg-surface
 - Each card has a 3px top border in the issuer's brand colour
 - Hover glow computed from brand colour hex → rgba (parsed in JS)
 - All 6 certs link to official credential verification URLs
-- Cert data lives in the `certifications` JS array — easy to update
+- Cert data lives in the `certifications` JS array - easy to update
 
 **Certifications data (to update):**
 ```js
@@ -184,7 +184,7 @@ const certifications = [
 
 ### 9. Contact (`#contact`)
 - 3 link cards: LinkedIn, GitHub, Location (non-clickable)
-- No form — deliberately removed. Contact happens via LinkedIn/GitHub only.
+- No form - deliberately removed. Contact happens via LinkedIn/GitHub only.
 
 ### 10. Footer
 - Left: "Kiran Krishnakumar · Data Engineer · 2026 · Built with code & caffeine."
@@ -196,7 +196,7 @@ const certifications = [
 
 ### 1. Pipeline Status Ticker
 **Location:** Hero left column, below social links  
-**What it does:** Simulates a live pipeline job running — amber pulsing dot, job name, row counter incrementing, elapsed timer, gradient progress bar. Cycles through 5 fake job names when a job completes.  
+**What it does:** Simulates a live pipeline job running - amber pulsing dot, job name, row counter incrementing, elapsed timer, gradient progress bar. Cycles through 5 fake job names when a job completes.  
 **Key IDs:** `#tickerJob`, `#tickerRows`, `#tickerElapsed`, `#tickerFill`  
 **To update job names:** Edit the `jobs` array in the ticker IIFE in `<script>`.
 
@@ -205,7 +205,7 @@ const certifications = [
 **What it does:** VS Code/Databricks-style terminal card (macOS dots, dark bg) that types out a PySpark/Delta Lake script line by line with syntax highlighting. Loops after a 2.8s pause.  
 **Syntax classes:** `.t-kw` (red, keywords), `.t-fn` (purple, functions), `.t-str` (blue, strings), `.t-op` (cyan, operators), `.t-cm` (grey italic, comments), `.t-num` (amber, numbers), `.t-nm` (white, identifiers)  
 **Key ID:** `#terminalBody`  
-**To change the code:** Edit the `lines` array in the terminal IIFE. Each entry is an HTML string with `<span class="t-*">` tokens — empty string `''` = blank line.
+**To change the code:** Edit the `lines` array in the terminal IIFE. Each entry is an HTML string with `<span class="t-*">` tokens - empty string `''` = blank line.
 
 ### 3. Animated Metric Counters
 **Location:** Metrics section (between About and Experience)  
@@ -244,13 +244,13 @@ const certifications = [
 | `.reveal` | All section content | `translateY(24px)` → `0`, triggered by IntersectionObserver at `threshold: 0.08` |
 | `.reveal-delay-1/2/3/4/5` | Stagger children | 100ms–500ms transition-delay |
 
-**Easing used throughout:** `cubic-bezier(0.16, 1, 0.3, 1)` — a fast-out spring curve.
+**Easing used throughout:** `cubic-bezier(0.16, 1, 0.3, 1)` - a fast-out spring curve.
 
 ---
 
 ## URL Routing (Clean URLs, No Hash)
 
-The site uses the History API for clean URLs — no `#certifications`, just `/certifications`.
+The site uses the History API for clean URLs - no `#certifications`, just `/certifications`.
 
 **How it works:**
 1. All nav/mobile links use `href="/section"` not `href="#section"`
@@ -269,13 +269,13 @@ The site uses the History API for clean URLs — no `#certifications`, just `/ce
 ## SEO Setup
 
 ### Meta tags in `<head>`
-- `<title>` — keyword-rich with role + key technologies
-- `<meta description>` — 160 chars, includes years of experience + tech stack
-- `<meta keywords>` — data engineering terms
+- `<title>` - keyword-rich with role + key technologies
+- `<meta description>` - 160 chars, includes years of experience + tech stack
+- `<meta keywords>` - data engineering terms
 - `<meta robots content="index, follow">`
-- `<link rel="canonical">` — `https://kirankrishnakumar.vercel.app/`
-- `<link rel="sitemap">` — points to `/sitemap.xml`
-- `<meta theme-color content="#050810">` — mobile browser chrome colour
+- `<link rel="canonical">` - `https://kirankrishnakumar.vercel.app/`
+- `<link rel="sitemap">` - points to `/sitemap.xml`
+- `<meta theme-color content="#050810">` - mobile browser chrome colour
 
 ### Open Graph (social sharing previews)
 Controls how the link looks when shared on LinkedIn, Slack, WhatsApp, etc.
@@ -293,7 +293,7 @@ This enables rich search results and knowledge panel eligibility on Google.
 ### Files
 | File | Purpose |
 |---|---|
-| `sitemap.xml` | 6 URLs with priorities — submit to Google Search Console |
+| `sitemap.xml` | 6 URLs with priorities - submit to Google Search Console |
 | `llms.txt` | Structured markdown for AI crawlers (llmstxt.org spec) |
 
 ---
@@ -329,9 +329,9 @@ Find the `pool` array in the log stream IIFE. Each entry: `{ l: 'INFO'|'WARN'|'D
 
 ### Replace the favicon
 Three files serve the favicon for maximum browser compatibility:
-- `favicon.svg` — used by modern browsers (Chrome 80+, Firefox, Safari 14+). Edit the SVG directly to change colour/text.
-- `favicon.ico` — 16/32/48px multi-size ICO, fallback for older browsers. Regenerate with Pillow if changed.
-- `assets/img/favicon-32.png` — extra PNG fallback.
+- `favicon.svg` - used by modern browsers (Chrome 80+, Firefox, Safari 14+). Edit the SVG directly to change colour/text.
+- `favicon.ico` - 16/32/48px multi-size ICO, fallback for older browsers. Regenerate with Pillow if changed.
+- `assets/img/favicon-32.png` - extra PNG fallback.
 
 To regenerate: run the Pillow script from the conversation (uses `arialbd.ttf` on Windows, dark `#050810` bg, cyan `#00c8ff` text).
 
@@ -343,7 +343,7 @@ Replace `/assets/img/home-perfil.jpg` with a new file and update:
 
 ### Update domain (if custom domain added)
 Find and replace `kirankrishnakumar.vercel.app` in:
-- `index.html` (6 occurrences — canonical, OG tags, JSON-LD)
+- `index.html` (6 occurrences - canonical, OG tags, JSON-LD)
 - `sitemap.xml` (6 occurrences)
 - `llms.txt` (1 occurrence)
 
@@ -376,13 +376,14 @@ Lucide icons are loaded but only used in the contact section (inline SVGs are us
 
 ## Things to Avoid / Known Decisions
 
-- **Do not add a contact form.** It was deliberately removed — Kiran prefers LinkedIn/GitHub only.
-- **Do not change the h1 font weight above 700 or size above `clamp(2.5rem, 6vw, 4.5rem)`** — was tried (800 weight, 6rem) and immediately reverted as it looked bad.
-- **Do not use `innerHTML +=` in a loop** for dynamically rendered elements (cert cards were once built this way — causes 6× DOM re-parse and IntersectionObserver timing issues). Always build a full string and assign `innerHTML` once.
+- **Do not add a contact form.** It was deliberately removed - Kiran prefers LinkedIn/GitHub only.
+- **No em dashes anywhere** (copy, comments, docs). Use a period, comma, colon or a plain hyphen. Removed everywhere on 2026-11-11 per the owner's global style rule; do not reintroduce them.
+- **Do not change the h1 font weight above 700 or size above `clamp(2.5rem, 6vw, 4.5rem)`** - was tried (800 weight, 6rem) and immediately reverted as it looked bad.
+- **Do not use `innerHTML +=` in a loop** for dynamically rendered elements (cert cards were once built this way - causes 6× DOM re-parse and IntersectionObserver timing issues). Always build a full string and assign `innerHTML` once.
 - **Cert card glow uses inline `onmouseenter` JS** (not CSS `::before`) because CSS `rgba(var(--cert-color-rgb))` requires a separate RGB variable that was never defined. The hex→RGB parse in JS is the correct approach.
 - **The `#hero` section has `padding: 0`** as an explicit override because the generic `section { padding: 100px 0 }` rule would otherwise apply and push hero content down by 100px on top of the 70px nav offset.
-- **Metric counters animate once** (observer unobserves after triggering) — they do not reset on re-scroll.
-- **Log stream pauses when off-screen** — the `setInterval` is cleared by IntersectionObserver when `.log-stream` leaves the viewport. This avoids background DOM mutation while the user isn't watching.
+- **Metric counters animate once** (observer unobserves after triggering) - they do not reset on re-scroll.
+- **Log stream pauses when off-screen** - the `setInterval` is cleared by IntersectionObserver when `.log-stream` leaves the viewport. This avoids background DOM mutation while the user isn't watching.
 
 ---
 
