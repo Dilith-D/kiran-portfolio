@@ -19,7 +19,7 @@ kiran portfolio/
 ├── favicon.ico                   ← ICO favicon with 16×16, 32×32, 48×48 sizes (fallback)
 ├── assets/
 │   └── img/
-│       ├── home-perfil.png       ← Kiran's profile photo
+│       ├── home-perfil.jpg       ← Kiran's profile photo
 │       └── favicon-32.png        ← 32×32 PNG favicon (extra fallback)
 ├── vercel.json                   ← Vercel SPA rewrite rule
 ├── _redirects                    ← Netlify equivalent (not used, kept for reference)
@@ -117,7 +117,7 @@ Footer       → --bg-surface
 ### 3. About (`#about`)
 - 2-column: photo (380px) + content
 - Photo: slight `-2deg` tilt, straightens on hover, cyan border glow
-- Photo src: `/assets/img/home-perfil.png` (local file)
+- Photo src: `/assets/img/home-perfil.jpg` (local file)
 - Stats grid: 3 cards — "2+ Years Exp", "6 Certifications", "4+ Technologies" (amber values)
 - Education pill: B.Tech, Computer Science · VIT Vellore · 2024
 
@@ -270,7 +270,7 @@ The site uses the History API for clean URLs — no `#certifications`, just `/ce
 ### Open Graph (social sharing previews)
 Controls how the link looks when shared on LinkedIn, Slack, WhatsApp, etc.
 - `og:title`, `og:description`, `og:url`, `og:image`, `og:type`, `og:locale`
-- Image: `https://kirankrishnakumar.vercel.app/assets/img/home-perfil.png`
+- Image: `https://kirankrishnakumar.vercel.app/assets/img/home-perfil.jpg`
 
 ### Twitter Card
 - `twitter:card`, `twitter:title`, `twitter:description`, `twitter:image`
@@ -326,7 +326,7 @@ Three files serve the favicon for maximum browser compatibility:
 To regenerate: run the Pillow script from the conversation (uses `arialbd.ttf` on Windows, dark `#050810` bg, cyan `#00c8ff` text).
 
 ### Change profile photo
-Replace `/assets/img/home-perfil.png` with a new file and update:
+Replace `/assets/img/home-perfil.jpg` with a new file and update:
 1. The `<img src>` in the About section
 2. `og:image` meta tag in `<head>`
 3. `twitter:image` meta tag in `<head>`
